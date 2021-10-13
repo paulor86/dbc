@@ -17,28 +17,4 @@ public class VotoDTO implements Serializable {
 	private EnumSimNao votoGerado;
 
 	private Pauta pauta;
-
-	public Integer getVotoId() {
-		return votoId;
-	}
-
-	public void setVotoId(Integer votoId) {
-		this.votoId = votoId;
-	}
-
-	public EnumSimNao getVotoGerado() {
-		return votoGerado;
-	}
-
-	public void setVotoGerado(EnumSimNao votoGerado) {
-		this.votoGerado = votoGerado;
-	}
-
-	public Pauta getPauta() {
-		return pauta;
-	}
-
-	public void setPauta(Pauta pauta) {
-		this.pauta = pauta;
-	}
 }

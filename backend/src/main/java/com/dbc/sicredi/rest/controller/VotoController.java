@@ -5,20 +5,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dbc.core.infrastructure.CRUDResourceImpl;
-import com.dbc.entities.Pauta;
-import com.dbc.sicredi.common.dto.PautaDTO;
-import com.dbc.sicredi.common.map.PautaMapper;
-import com.dbc.sicredi.service.PautaService;
+import com.dbc.entities.Voto;
+import com.dbc.sicredi.common.dto.VotoDTO;
+import com.dbc.sicredi.common.map.VotoMapper;
+import com.dbc.sicredi.service.VotoService;
 
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 @CrossOrigin
 @RestController
-@RequestMapping("/pauta")
-public class PautaController extends CRUDResourceImpl<PautaDTO, Pauta, PautaService, PautaMapper> {
+@RequestMapping("/voto")
+public class VotoController extends CRUDResourceImpl<VotoDTO, Voto, VotoService, VotoMapper> {
 
-	public PautaController(PautaService service, PautaMapper mapper) {
+	public VotoController(VotoService service, VotoMapper mapper) {
 		super(service, mapper);
 	}
 }
